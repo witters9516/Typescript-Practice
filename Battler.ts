@@ -4,7 +4,7 @@ export class Battler
     hp:number;
     level:number;
 
-    constructor(battlerName, hp, level)
+    constructor(battlerName: string, hp: number, level: number)
     {
         this.battlerName = battlerName;
         this.hp = hp;
