@@ -1,5 +1,8 @@
-export class Battler {
-    constructor(battlerName, hp, level) {
+"use strict";
+exports.__esModule = true;
+exports.Battler = void 0;
+var Battler = /** @class */ (function () {
+    function Battler(battlerName, hp, level) {
         this.battlerName = battlerName;
         this.hp = hp;
         this.level = level;
@@ -7,44 +10,46 @@ export class Battler {
     /**
      * getBattlerName
      */
-    getBattlerName() {
+    Battler.prototype.getBattlerName = function () {
         return this.battlerName;
-    }
+    };
     /**
      * getHP
   
     */
-    getHP() {
+    Battler.prototype.getHP = function () {
         return this.hp;
-    }
+    };
     /**
      * getLevel
  
     */
-    getLevel() {
+    Battler.prototype.getLevel = function () {
         return this.level;
-    }
+    };
     /**
      * setBattlerName
      */
-    setBattlerName(battlerName) {
+    Battler.prototype.setBattlerName = function (battlerName) {
         this.battlerName = battlerName;
-    }
+    };
     /**
      * setHP
      */
-    setHP(hp) {
+    Battler.prototype.setHP = function (hp) {
         this.hp = hp;
-    }
+    };
     /**
     * setLevel
     */
-    setLevel(level) {
+    Battler.prototype.setLevel = function (level) {
         this.level = level;
-    }
-    toString() {
+    };
+    Battler.prototype.toString = function () {
         return "Battle Name: " + this.battlerName + "\n" +
             "HP: " + this.hp + "/n" +
             "Level: " + this.level;
-    }
-}
+    };
+    return Battler;
+}());
+exports.Battler = Battler;

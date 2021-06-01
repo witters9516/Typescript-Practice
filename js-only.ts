@@ -1,4 +1,5 @@
 import { Battler } from './Battler.js';
+
 const button = document.querySelector("button");
 const input1 = document.getElementById("num1") as HTMLInputElement;
 const input2 = document.getElementById("num2") as HTMLInputElement;
@@ -18,6 +19,7 @@ function add(num1: number, num2: number)
     console.log(bob.toString());
     console.log(terry.toString());
     console.log(avain.toString());
+    console.log(terry.getHP() - bob.getHP());
 
     return num1 + num2;
 }
